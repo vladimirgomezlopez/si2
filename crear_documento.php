@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $documento_id = $row["id"];
         echo "Documento creado exitosamente con ID: " . $documento_id;
     } else {
-        echo "Error al crear el documento: " . pg_last_error($conn);
+        echo "Error al crear documento: " . pg_last_error($conn);
     }
 }
 
